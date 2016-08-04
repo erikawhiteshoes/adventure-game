@@ -1,7 +1,7 @@
 (function() {
   var Player = require('./lib/types/player');
-  var Room   = require('./lib/types/room');
   var Weapon = require('./lib/types/weapon');
+  var Db     = require('./lib/db');
 
   var oph = new Weapon({
     id: 1, 
@@ -31,36 +31,9 @@
     health: 100
   });
 
-  var alley = new Room({
-    name: 'A dark alley',
-    description: 'The sunlight barely penetrates here.  The walls are covered with a dark substance.'
-  });
-
-  var market = new Room({
-    name: 'A busy marketplace',
-    description: 'There are people all around you, bustling about attending to their daily business.  You can hear the sounds of metal being hammered and smell food being cooked.'
-  });
-
-
-market.enter(tchaik);
-
-alley.enter(berlioz);
-console.log(berlioz.look());
-
-market.enter(berlioz);
-console.log(berlioz.look());
-
-console.log(tchaik.look(berlioz));
-console.log(berlioz.look(tchaik));
-
-  while (
-    berlioz.currentHealth() > 0 && 
-    tchaik.currentHealth() > 0) {
-    tchaik.attack(berlioz);
-    berlioz.attack(tchaik);
-    console.log(tchaik.attack(berlioz));
-    console.log(berlioz.attack(tchaik));
-  }
-
+  var market = Db.getRoom(1);
+  market.enter(berlioz);
+  market.enter(tchaik);
+  console.log(berlioz.look());
 }());
 

@@ -8,5 +8,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "glob": "^7.0.5",
+    "glob-fs": "^0.1.6"
+  }
 }
