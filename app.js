@@ -2,38 +2,15 @@
   var Player = require('./lib/types/player');
   var Weapon = require('./lib/types/weapon');
   var Db     = require('./lib/db');
+  var worldData = Db().load();
+  console.log(worldData.players);
 
-  var oph = new Weapon({
-    id: 1, 
-    name: 'an ophicleide',
-    baseDamage: 2,
-    sidedDie: 4
-  });
+  // modify state
+  //
+  var crowEater = new Weapon({name: 'a crowbar', baseDamage: 24, sidedDie: 12, flags:['broken_teeth']});
 
-  var cannon  = new Weapon({
-    id: 2, 
-    name: 'a cannon',
-    baseDamage: 2,
-    sidedDie: 4
-  });
+  worldData.weapons.push(crowEater);
 
-  var berlioz = new Player({
-    id: 1, 
-    name: 'Berlioz the Belligerent',
-    mainHand: oph,
-    health: 100
-  });
-
-  var tchaik = new Player({
-    id: 2, 
-    name: 'Tchaikovsky the Treacherous',
-    mainHand: cannon,
-    health: 100
-  });
-
-  var market = Db.getRoom(1);
-  market.enter(berlioz);
-  market.enter(tchaik);
-  console.log(berlioz.look());
+  Db().save();
 }());
 
