@@ -1,15 +1,16 @@
 (function() {
   var Player = require('./lib/types/player');
   var Weapon = require('./lib/types/weapon');
+  var Item = require('./lib/types/item');
   var Db     = require('./lib/db');
   var worldData = Db().load();
-  console.log(worldData.players);
+  
+  var p1 = worldData.players[0];
+  var p2 = worldData.players[1];
 
-  // modify state
-  //
-  var crowEater = new Weapon({name: 'a crowbar', baseDamage: 24, sidedDie: 12, flags:['broken_teeth']});
+  p1.mainHand = worldData.weapons[2];
+  p2.mainHand = worldData.weapons[1];
 
-  worldData.weapons.push(crowEater);
 
   Db().save();
 }());
