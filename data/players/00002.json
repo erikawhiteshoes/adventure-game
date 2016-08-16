@@ -1,1 +1,1 @@
-{"id":"2","name":"Tchaikovsky the Treacherous","mainHand":{"id":"2","name":"a crowbar","baseDamage":24,"sidedDie":12,"flags":[]},"health":100,"items":[],"hitsTaken":[],"heals":[]}
+{"id":"2","name":"Tchaikovsky the Treacherous","mainHand":{"id":"2","name":"a crowbar","baseDamage":24,"sidedDie":12,"flags":[]},"attributes":{"health":0,"magic":0,"move":0},"items":[],"hitsTaken":[]}

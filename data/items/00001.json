@@ -1,1 +1,1 @@
-{"id":"1","name":"an apple","description":"Eve's bane","flags":["consumable"],"heals":3}
+{"id":"1","name":"an apple","description":"Eve's bane","flags":["edible"],"effects":[{"action":"eat","attributes":{"health":3}}]}

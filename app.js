@@ -21,7 +21,9 @@
   
 //How do we accumulate and save health?
 
-  console.log(p1.eatHealth(moldyCheese));
+  console.log(p1.attributes.health);
+  console.log(p1.eat(moldyCheese));
+  console.log(p1.attributes.health);
   Db().save();
 }());
 

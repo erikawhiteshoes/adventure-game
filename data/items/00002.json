@@ -1,1 +1,1 @@
-{"id":"2","name":"moldy cheese","description":"festering fontina","flags":["consumable"],"heals":-20}
+{"id":"2","name":"moldy cheese","description":"festering fontina","flags":["edible"],"effects":[{"action":"eat","attributes":{"health":-10}}]}
