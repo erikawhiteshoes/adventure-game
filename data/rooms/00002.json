@@ -1,1 +1,1 @@
-{"id":"2","name":"A dark alley","description":"The sunlight barely penetrates here.  The walls are covered with a dark substance.","players":[{"id":"1","name":"Berlioz the Belligerent","room":"~","mainHand":{"id":"3","name":"a cannon","baseDamage":2,"sidedDie":4,"flags":[]},"attributes":{"health":90,"magic":0,"move":0},"items":[],"hitsTaken":[]}]}
+{"id":"2","name":"ship","description":"The Tri-tone, a scary looking vessle, with old cannons and a little dingy","players":[],"exits":[{"s":5,"n":3}]}
