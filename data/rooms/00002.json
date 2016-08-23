@@ -1,1 +1,1 @@
-{"id":"2","name":"ship","description":"The Tri-tone, a scary looking vessle, with old cannons and a little dingy","players":[],"exits":[{"s":5,"n":3}]}
+{"id":"2","name":"docks","description":"a massive shipyard with battleships and trading vessels","players":[],"exits":[{"s":4,"n":1}]}

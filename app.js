@@ -23,9 +23,6 @@
 //var waterfall  = new Room({name:'waterfall', description:'a massive gleaming waterfall that seems to fall form the heavens!', players:[], exits:[{'s':12,'e':10}]});
 //var orcPit  = new Room({name:'Orchestral Pit', description:'You walk through the waterfall, the earth gives way and you fall into the ORCHESTRAL PIT OF DISPAIR, where you are confronted by the egomaniac Wagner!', players:[], exits:[{'n':10}]});
 
-//worldData.rooms.push(docks);
-worldData.rooms.push(ship);
-
   p1.mainHand = worldData.weapons[2];
   p2.mainHand = worldData.weapons[1];
 
