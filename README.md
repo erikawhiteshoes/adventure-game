@@ -6,7 +6,7 @@ player starts with a wheel of cheese and 500 gold, find the beggar and give him 
 
 TODO 
 map out:
-alley- add beggar
+add alley- add beggar
 market shopkeeper that sells the weapon to defeat Wagner the wicked  
 docks
 ship
